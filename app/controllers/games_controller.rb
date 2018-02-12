@@ -25,8 +25,9 @@ class GamesController < ApplicationController
         @message = "not an english word"
       end
     else
-        @message = "not in the grid"
+        @message =  "not in the grid"
     end
+    session[:score] += params[:word].length
   end
 end
 
