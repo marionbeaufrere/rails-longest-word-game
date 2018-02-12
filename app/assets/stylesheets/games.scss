@@ -2,17 +2,35 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.main-container {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
 .container {
   display: flex;
   text-align: center;
   justify-content: center;
+  align-items: center;
 }
-
 .letter {
-  background: blue;
+  background: #007a87;
   color: white;
-  padding: 20px;
-  margin: 10px;
+  padding: 15px 20px;
+  margin: 7px;
   border: 2px solid white;
+  font-size: 20px;
+  font-weight: bold;
+}
+#input {
+  width: 300px;
+  border-radius: 2px;
+  height: 35px;
+}
+a {
+  color: white !important;
 }
 

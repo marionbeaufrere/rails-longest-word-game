@@ -1,7 +1,17 @@
- <div class = "container">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+ <div class = "main-container">
  <div> <h1> New Game </h1> </div>
+ <div class = "container">
  <br>
     <% @letters.each do |letter| %>
       <div class = letter> <%= letter %> </div>
     <% end %>
+  </div>
+  <h3> What is the longest word you can find? </h3>
+  <form action="/score" method="post">
+    <input type="text" name="new" placeholder="Try your luck" id="input">
+    <input class = "btn btn-primary" type="submit">
+  </form>
 </div>
